@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindPwActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/txtFindPw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 찾기"
+            android:textSize="30dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtPutId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디를 입력해주세요."
+            android:layout_below="@id/txtFindPw"
+            android:layout_marginTop="70dp"/>
+
+        <EditText
+            android:id="@+id/editId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPutId"
+            android:background="@drawable/edittext_edge"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/txtPutEmail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일을 입력해주세요"
+            android:layout_below="@id/editId"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/editEmail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPutEmail2"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_edge"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:padding="3dp"/>
+
+        <Button
+            android:id="@+id/btnFindPwOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editEmail2"
+            android:text="확인"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="입력하신 정보와 일치하는 비밀번호 입니다."
+            android:layout_below="@id/btnFindPwOk"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/txtFindPwValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnFindPwOk"
+            android:layout_marginTop="60dp"
+            android:text="비밀번호"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

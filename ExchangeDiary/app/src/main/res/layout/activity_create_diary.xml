@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:scaleType="fitXY"
+    tools:context=".CreateDiary">
+
+    <ImageView
+        android:id="@+id/book"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_edge"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/txtINPUT"
+        android:layout_alignBottom="@id/book"
+        android:layout_alignLeft="@id/book"
+        android:layout_alignRight="@id/book"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/book"
+        android:text="제목 : "
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:id="@+id/diaryNAME"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/book"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/txt"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="110dp"/>
+
+    <Button
+        android:id="@+id/okNAME"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/book"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="300dp"
+        android:background="@drawable/btn_dege"
+        android:text="저장"/>
+
+    <Button
+        android:id="@+id/colorBTN"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dege"
+        android:text="색 설정"
+        android:layout_below="@id/diaryNAME"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"/>
+
+    <Button
+        android:id="@+id/pictureBTN"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dege"
+        android:text="사진 설정"
+        android:layout_below="@id/diaryNAME"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/okBTN"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/pictureBTN"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_dege"
+        android:text="확인"/>
+
+</RelativeLayout>

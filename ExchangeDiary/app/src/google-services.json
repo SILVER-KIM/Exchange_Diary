@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "610300300739",
+    "firebase_url": "https://exchangediary-8c131.firebaseio.com",
+    "project_id": "exchangediary-8c131",
+    "storage_bucket": "exchangediary-8c131.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610300300739:android:e9790769cb769a06",
+        "android_client_info": {
+          "package_name": "com.example.exchangediary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610300300739-lidun2u90p2uojb7s3j8jg0j6h0f30tk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf3BU1cQRELqY3YxqYOaG60hyKEPJWrMA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

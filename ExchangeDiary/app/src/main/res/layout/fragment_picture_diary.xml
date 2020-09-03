@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:anroid="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFF"
+    tools:context=".PictureDiary"
+    android:id="@+id/Relative">
+
+    <Spinner
+        android:id="@+id/spinner_main_weather"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:spinnerMode="dropdown"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner_main_feeling"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/spinner_main_weather"
+        android:spinnerMode="dropdown"
+
+        />
+
+
+    <FrameLayout
+        android:id="@+id/Frame"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp">
+
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/Relative"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_edge"
+            android:hint="제목"
+            android:paddingLeft="15dp"
+            android:textColor="#000"
+            android:textSize="13dp" />
+
+        <ImageButton
+            android:id="@+id/date"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="236dp"
+            android:layout_toRightOf="@id/title"
+            android:onClick="mOnClick"
+            android:background="@drawable/deadline"/>
+
+        <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="280dp"
+            android:background="@drawable/edittext_edge"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:paddingLeft="18dip"
+            android:paddingTop="10dip"
+            android:layout_toRightOf="@id/date"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="350dp"
+            android:layout_height="230dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_edge"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="145dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/plus" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Frame"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:text="내용"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:gravity="top|left"
+        android:hint="내용을 입력하세요."
+        android:id="@+id/textDiary"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/text"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="12dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:background="@drawable/edittext_edge"/>
+
+    <Button
+        android:id="@+id/Renew"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/textDiary"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:background="#CBF0F1"
+        android:text="취소" />
+
+    <Button
+        android:id="@+id/savefile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/textDiary"
+        android:layout_marginTop="20dp"
+        android:background="#CBF0F1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/Renew"
+        android:text="임시저장"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/textDiary"
+        android:layout_marginTop="20dp"
+        android:background="#CBF0F1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/savefile"
+        android:text="보내기"/>
+
+
+
+
+</RelativeLayout>

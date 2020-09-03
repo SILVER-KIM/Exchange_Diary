@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="#cccccc"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_edge"
+            android:minHeight="30dp"
+            android:text="WHITE"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_edge"
+            android:minHeight="30dp"
+            android:text="RED"
+            android:textColor="#ff0000"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_edge"
+            android:minHeight="30dp"
+            android:text="YELLOW"
+            android:textColor="#FFE400"
+            android:textSize="10sp" />
+
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_edge"
+            android:minHeight="30dp"
+            android:text="GREEN"
+            android:textColor="#1DDB16"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_edge"
+            android:minHeight="30dp"
+            android:text="BLUE"
+            android:textColor="#0100FF"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_edge"
+            android:minHeight="30dp"
+            android:text="BLACK"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/btn_new"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_edge"
+            android:minHeight="30dp"
+            android:text="새 그림"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_2"
+            android:layout_toRightOf="@id/btn_new"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_edge"
+            android:minHeight="30dp"
+            android:text="이전"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_eraser"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_2"
+            android:layout_toRightOf="@id/btn_back"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_edge"
+            android:minHeight="30dp"
+            android:text="지우개"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_3"
+            android:layout_toRightOf="@id/btn_eraser"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_edge"
+            android:minHeight="30dp"
+            android:text="저장"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_3"
+        android:layout_toRightOf="@id/btn_save"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_edge"
+        android:minHeight="30dp"
+        android:text="불러오기"
+        android:textColor="#000000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_open"
+        android:layout_below="@id/btn_6"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"
+        android:text="Line Size"/>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_toRightOf="@id/btn_open"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/subLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/apply_Image"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="600dp"
+            android:background="#CBF0F1"
+            android:text="일기에 그림 적용하기" />
+
+    </RelativeLayout>
+</LinearLayout>

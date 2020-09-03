@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF">
+
+    <!--상단바에 툴바 화면을 만들기 (검색 아이콘 등등..-->
+
+    <item
+        android:id="@+id/toolbar_search"
+        android:title="Search"
+        android:icon="@drawable/search"
+        android:iconTint="@color/colorBlack"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/toolbar_addFriend"
+        android:title="AddFriend"
+        android:icon="@drawable/addfriend"
+        android:iconTint="@color/colorBlack"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/toolbar_Message"
+        android:title="AddFriend"
+        android:icon="@drawable/message"
+        android:iconTint="@color/colorBlack"
+        app:showAsAction="always"/>
+
+</menu>

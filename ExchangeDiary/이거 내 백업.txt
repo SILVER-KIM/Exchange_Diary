@@ -1,0 +1,117 @@
+package com.example.exchangediary;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+
+import com.larswerkman.holocolorpicker.ColorPicker;
+
+public class NewBookshelf extends AppCompatActivity {
+    private final static int COLOR_ACTIVITY = 1;
+    ImageView book;
+    ColorPicker picker;
+    Button colorBTN, pictureBTN;
+    Intent intent;
+    int color;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_new_bookshelf);
+
+        book = (ImageView)findViewById(R.id.book);
+        colorBTN = (Button)findViewById(R.id.colorBTN);
+        pictureBTN = (Button)findViewById(R.id.pictureBTN);
+
+        colorBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getApplicationContext(), MyColorPicker.class);
+                if (color != 0) {
+                    intent.putExtra("oldColor", color);
+                }
+                startActivityForResult(intent, COLOR_ACTIVITY);
+            }
+        });
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(resultCode == RESULT_OK){
+            if(requestCode == COLOR_ACTIVITY){
+                color = data.getIntExtra("color", 0);
+                book.setBackgroundColor(color);
+            }
+        }
+    }
+
+}
+
+---------------------------------
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".NewBookshelf">
+
+    <ImageView
+        android:id="@+id/book"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_dege"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/book"
+        android:text="제목 : "
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:id="@+id/diaryNAME"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/book"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/txt"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="75dp"/>
+
+    <Button
+        android:id="@+id/colorBTN"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dege"
+        android:text="색 설정"
+        android:layout_below="@id/diaryNAME"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="75dp"/>
+
+    <Button
+        android:id="@+id/pictureBTN"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dege"
+        android:text="사진 설정"
+        android:layout_below="@id/diaryNAME"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="30dp"
+    android:weightSum="4"
+    android:background="#FFFF"
+    tools:context=".Search">
+
+    <EditText
+        android:id="@+id/userEdit_search"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:hint="아이디를 입력하세요."
+        android:textSize="15dp"
+        android:background="@drawable/edittext_edge"/>
+
+    <Button
+        android:id="@+id/btnUserSearch_search"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="검색"
+        android:background="@drawable/btn_dege"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/userEdit_search"/>
+
+    <FrameLayout
+        android:id="@+id/add_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@id/btnUserSearch_search"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

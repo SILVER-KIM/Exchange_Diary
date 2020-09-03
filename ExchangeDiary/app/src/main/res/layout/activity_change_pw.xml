@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".ChangePwActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/pwset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 설정"
+            android:textSize="30dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/presentpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 비밀번호를 입력하세요."
+            android:layout_below="@id/pwset"
+            android:layout_marginTop="60dp"/>
+
+        <EditText
+            android:id="@+id/presentPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/presentpw"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_edge"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/newpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="새로운 비밀번호를 입력하세요."
+            android:layout_below="@id/presentpw"
+            android:layout_marginTop="70dp"/>
+
+        <EditText
+            android:id="@+id/newPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newpw"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_edge"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/repw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호를 다시 입력하세요."
+            android:layout_below="@id/newpw"
+            android:layout_marginTop="70dp"/>
+
+        <EditText
+            android:id="@+id/reInputPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repw"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_edge"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:padding="3dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:layout_below="@id/reInputPw"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="cancel"/>
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="변경"
+            android:layout_below="@id/reInputPw"
+            android:layout_toRightOf="@id/btnCancel"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

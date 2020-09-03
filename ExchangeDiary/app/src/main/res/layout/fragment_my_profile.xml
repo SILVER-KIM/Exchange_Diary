@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".MyProfile">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/Frame">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#CBF0F1" />
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="120dp"
+            android:id="@+id/pbLogin"/>
+
+        <ImageButton
+            android:id="@+id/cameraBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="206dp"
+            android:layout_marginLeft="266dp"
+            android:src="@drawable/camera"
+            android:background="#000"/>
+    </FrameLayout>
+
+    <TextView
+    android:id="@+id/textID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Frame"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="20dp"
+    android:text="ID"
+    android:textSize="16dp"
+    android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/showID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Frame"
+        android:layout_toRightOf="@id/textID"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text=":)"
+        android:textSize="16dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textNAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textID"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="이름"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:id="@+id/showNAME"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textNAME"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:text="닉네임"
+        android:paddingLeft="15dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:background="@drawable/edittext_edge"/>
+
+    <TextView
+        android:id="@+id/textMESSAGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showNAME"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="상태메세지"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:gravity="top|left"
+        android:hint="상태메세지를 입력하세요."
+        android:id="@+id/showMESSAGE"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMESSAGE"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="12dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:background="@drawable/edittext_edge"/>
+
+    <Button
+        android:id="@+id/Renew"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/showMESSAGE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#CBF0F1"
+        android:text="적용하기"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".ShowUser">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/showImage"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="75dp"
+        android:id="@+id/pbLoding"/>
+
+    <TextView
+        android:id="@+id/showAddName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/showImage"
+        android:layout_centerHorizontal="true"
+        android:text="hello"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/showAddName"
+        android:layout_centerHorizontal="true"
+        android:text="친구추가"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:background="@drawable/btn_dege"/>
+
+</RelativeLayout>
